@@ -60,7 +60,7 @@ const Dropdown = () => {
               </a>
             </motion.li>
             <motion.li className="text-center px-[16px] py-[8px] bg-primary text-white text-sm hover:bg-primaryHover transition duration-150 cursor-pointer rounded-md font-semibold">
-              <a href="#Rezervation" onClick={handleOpen}>
+              <a href="#Reservation" onClick={handleOpen}>
                 Rezervasyon
               </a>
             </motion.li>
