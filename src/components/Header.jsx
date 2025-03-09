@@ -50,12 +50,12 @@ const Header = () => {
       <div className="flex lg:hidden mr-5 transition duration-300">
         {open ? (
           <IoCloseOutline
-            className="text-4xl cursor-pointer text-primary hover:text-primaryHover transition duration-300"
+            className="text-4xl cursor-pointer text-primary font-bold mr-2"
             onClick={handleOpen} // handleOpen fonksiyonunu kullan
           />
         ) : (
           <IoMenu
-            className="text-4xl cursor-pointer text-primary hover:text-primaryHover transition duration-300 mr-2"
+            className="text-4xl cursor-pointer text-primary font-bold mr-2"
             onClick={handleOpen} // handleOpen fonksiyonunu kullan
           />
         )}
