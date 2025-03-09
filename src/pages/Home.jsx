@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Dropdown from "../components/Dropdown";
-import AboutImage from "../images/AboutSection.webp";
+// import AboutImage from "../images/AboutSection.webp";
 import Rooms from "../components/Rooms";
 import Services from "../components/Services";
 import Gallery from "../components/Gallery";
@@ -59,7 +59,7 @@ const Home = () => {
             {/* Resim */}
             <div className="w-full lg:w-1/2 rounded-lg flex items-center justify-center">
               <img
-                src={AboutImage}
+                src=""
                 alt="Esla Gold Mountain Otel"
                 className="w-full max-w-[400px] lg:max-w-full rounded-3xl p-4 object-cover "
               />
