@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* src/index.css veya src/App.css */
+  /* Yumuşak scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Scrollbar'ı özelleştirme */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #8c7a65;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #bfaa90;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #bfaa90;
+  }
+}
