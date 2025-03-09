@@ -6,6 +6,7 @@ import Rooms from "../components/Rooms";
 import Services from "../components/Services";
 import Gallery from "../components/Gallery";
 import Reservation from "../components/Reservation";
+import Contact from "../components/Contact";
 const Home = () => {
   return (
     <div className="flex flex-col min-h-screen">
@@ -148,8 +149,24 @@ const Home = () => {
               </h1>
               <div className="h-[3px] w-[100px] bg-primary rounded-xl"></div>
             </div>
-            <div>
+            <div className="w-full ">
               <Reservation />
+            </div>
+          </article>
+        </section>
+        <section
+          id="Contact"
+          className="flex items-center justify-center w-full lg:mt-30 mt-20 flex-col"
+        >
+          <article className="flex items-center justify-center flex-col gap-2">
+            <div className="flex items-center justify-center flex-col gap-2">
+              <h1 className="text-3xl lg:text-4xl font-bold text-center font-playfair">
+                İletişim
+              </h1>
+              <div className="h-[3px] w-[70px] bg-primary rounded-xl"></div>
+            </div>
+            <div className="w-full ">
+              <Contact />
             </div>
           </article>
         </section>
