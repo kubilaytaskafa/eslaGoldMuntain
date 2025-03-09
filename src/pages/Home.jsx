@@ -35,7 +35,7 @@ const Home = () => {
               deneyimi.
             </p>
             <a
-              href="#Rezervation"
+              href="#Reservation"
               className="text-center p-4 bg-primary text-white text-md hover:bg-primaryHover transition duration-150 cursor-pointer rounded-md font-semibold"
             >
               Hemen Rezervasyon Yapın
