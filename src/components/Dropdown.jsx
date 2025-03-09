@@ -29,72 +29,37 @@ const Dropdown = () => {
             // Opaklık animasyonu
             onClick={handleOpen}
           >
-            <motion.li
-              className="font-semibold text-base hover:text-primary transition duration-150 cursor-pointer"
-              initial={{ opacity: 0, x: -20 }} // Başlangıçta soldan ve gizli
-              animate={{ opacity: open ? 1 : 0, x: open ? 0 : -20 }} // Opaklık ve X ekseninde animasyon
-              transition={{ duration: 0.2, delay: 0.1 }} // Her öğenin biraz gecikmeli açılmasını sağlamak
-            >
+            <motion.li className="font-semibold text-base hover:text-primary transition duration-150 cursor-pointer">
               <a href="#Home" onClick={handleOpen}>
                 Anasayfa
               </a>
             </motion.li>
-            <motion.li
-              className="font-semibold text-base hover:text-primary transition duration-150 cursor-pointer"
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: open ? 1 : 0, x: open ? 0 : -20 }}
-              transition={{ duration: 0.2, delay: 0.2 }}
-            >
+            <motion.li className="font-semibold text-base hover:text-primary transition duration-150 cursor-pointer">
               <a href="#About" onClick={handleOpen}>
                 Hakkımızda
               </a>
             </motion.li>
-            <motion.li
-              className="font-semibold text-base hover:text-primary transition duration-150 cursor-pointer"
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: open ? 1 : 0, x: open ? 0 : -20 }}
-              transition={{ duration: 0.2, delay: 0.3 }}
-            >
+            <motion.li className="font-semibold text-base hover:text-primary transition duration-150 cursor-pointer">
               <a href="#Rooms" onClick={handleOpen}>
                 Odalar
               </a>
             </motion.li>
-            <motion.li
-              className="font-semibold text-base hover:text-primary transition duration-150 cursor-pointer"
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: open ? 1 : 0, x: open ? 0 : -20 }}
-              transition={{ duration: 0.2, delay: 0.4 }}
-            >
+            <motion.li className="font-semibold text-base hover:text-primary transition duration-150 cursor-pointer">
               <a href="#Services" onClick={handleOpen}>
                 Hizmetler
               </a>
             </motion.li>
-            <motion.li
-              className="font-semibold text-base hover:text-primary transition duration-150 cursor-pointer"
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: open ? 1 : 0, x: open ? 0 : -20 }}
-              transition={{ duration: 0.2, delay: 0.4 }}
-            >
+            <motion.li className="font-semibold text-base hover:text-primary transition duration-150 cursor-pointer">
               <a href="#Gallery" onClick={handleOpen}>
                 Galerimiz
               </a>
             </motion.li>
-            <motion.li
-              className="font-semibold text-base hover:text-primary transition duration-150 cursor-pointer"
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: open ? 1 : 0, x: open ? 0 : -20 }}
-              transition={{ duration: 0.2, delay: 0.5 }}
-            >
+            <motion.li className="font-semibold text-base hover:text-primary transition duration-150 cursor-pointer">
               <a href="#Contact" onClick={handleOpen}>
                 İletişim
               </a>
             </motion.li>
-            <motion.li
-              className="text-center px-[16px] py-[8px] bg-primary text-white text-sm hover:bg-primaryHover transition duration-150 cursor-pointer rounded-md font-semibold"
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: open ? 1 : 0, x: open ? 0 : -20 }}
-              transition={{ duration: 0.2, delay: 0.6 }}
-            >
+            <motion.li className="text-center px-[16px] py-[8px] bg-primary text-white text-sm hover:bg-primaryHover transition duration-150 cursor-pointer rounded-md font-semibold">
               <a href="#Rezervation" onClick={handleOpen}>
                 Rezervasyon
               </a>

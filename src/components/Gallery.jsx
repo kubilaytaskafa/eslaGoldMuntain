@@ -5,7 +5,7 @@ import hamam from "../images/hamam.webp";
 import lobi from "../images/lobi.webp";
 import restoran from "../images/restoran.webp";
 import sinema from "../images/sinema.webp";
-import { div } from "framer-motion/client";
+
 const Gallery = () => {
   const images = [bahce, dismekan, hamam, lobi, restoran, sinema];
   return (

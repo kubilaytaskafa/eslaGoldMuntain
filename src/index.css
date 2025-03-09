@@ -7,6 +7,8 @@
   /* Yumuşak scroll */
   html {
     scroll-behavior: smooth;
+    overscroll-behavior: contain; /* Aşırı kaydırmayı engelle */
+    -webkit-overflow-scrolling: touch; /* iOS için doğal kaydırma */
   }
 
   /* Scrollbar'ı özelleştirme */
@@ -25,5 +27,9 @@
 
   ::-webkit-scrollbar-thumb:hover {
     background: #bfaa90;
+  }
+  body {
+    overflow-x: hidden;
+    touch-action: manipulation; /* Dokunma hareketlerini optimize et */
   }
 }

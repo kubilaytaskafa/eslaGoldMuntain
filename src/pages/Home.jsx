@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Dropdown from "../components/Dropdown";
-// import AboutImage from "../images/AboutSection.webp";
+import dismekan from "../images/dismekan.webp";
 import Rooms from "../components/Rooms";
 import Services from "../components/Services";
 import Gallery from "../components/Gallery";
@@ -59,7 +59,7 @@ const Home = () => {
             {/* Resim */}
             <div className="w-full lg:w-1/2 rounded-lg flex items-center justify-center">
               <img
-                src=""
+                src={dismekan}
                 alt="Esla Gold Mountain Otel"
                 className="w-full max-w-[400px] lg:max-w-full rounded-3xl p-4 object-cover "
               />
@@ -93,7 +93,7 @@ const Home = () => {
           className="flex items-center justify-center w-full lg:mt-30 mt-20 flex-col"
         >
           <article className="flex items-center justify-center flex-col gap-2">
-            <div className="flex items-center justify-center flex-col">
+            <div className="flex items-center justify-center flex-col gap-2">
               <h1 className="text-3xl lg:text-4xl font-bold text-center font-playfair">
                 Odalarımız
               </h1>
@@ -109,7 +109,7 @@ const Home = () => {
           className="flex items-center justify-center w-full lg:mt-30 mt-20 flex-col"
         >
           <article className="flex items-center justify-center flex-col gap-2">
-            <div className="flex items-center justify-center flex-col">
+            <div className="flex items-center justify-center flex-col gap-2">
               <h1 className="text-3xl lg:text-4xl font-bold text-center font-playfair">
                 Hizmetlerimiz
               </h1>
@@ -125,7 +125,7 @@ const Home = () => {
           className="flex items-center justify-center w-full lg:mt-30 mt-20 flex-col"
         >
           <article className="flex items-center justify-center flex-col gap-2">
-            <div className="flex items-center justify-center flex-col">
+            <div className="flex items-center justify-center flex-col gap-2">
               <h1 className="text-3xl lg:text-4xl font-bold text-center font-playfair">
                 Galerimiz
               </h1>
@@ -134,6 +134,20 @@ const Home = () => {
             <div>
               <Gallery />
             </div>
+          </article>
+        </section>
+        <section
+          id="Reservation"
+          className="flex items-center justify-center w-full lg:mt-30 mt-20 flex-col"
+        >
+          <article className="flex items-center justify-center flex-col gap-2">
+            <div className="flex items-center justify-center flex-col gap-2">
+              <h1 className="text-3xl lg:text-4xl font-bold text-center font-playfair">
+                Rezervasyon
+              </h1>
+              <div className="h-[3px] w-[100px] bg-primary rounded-xl"></div>
+            </div>
+            <div></div>
           </article>
         </section>
       </main>
