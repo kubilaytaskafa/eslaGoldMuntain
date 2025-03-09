@@ -3,15 +3,29 @@
 @tailwind utilities;
 
 @layer base {
-  /* src/index.css veya src/App.css */
-  /* Yumuşak scroll */
+  /* Scroll davranışını optimize et */
   html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Yumuşak kaydırma */
     overscroll-behavior: contain; /* Aşırı kaydırmayı engelle */
-    -webkit-overflow-scrolling: touch; /* iOS için doğal kaydırma */
   }
 
-  /* Scrollbar'ı özelleştirme */
+  body {
+    overflow-x: hidden; /* Yatay kaydırmayı engelle */
+    touch-action: manipulation; /* Dokunma hareketlerini optimize et */
+  }
+
+  /* iOS için özel düzeltme */
+  @supports (-webkit-touch-callout: none) {
+    html {
+      scroll-behavior: auto; /* iOS'ta smooth-scroll'u kapat */
+    }
+    body {
+      -webkit-overflow-scrolling: touch; /* iOS için doğal kaydırma */
+      overflow-y: scroll; /* Kaydırmayı aktif tut */
+    }
+  }
+
+  /* Scrollbar'ı özelleştirme (Sadece Webkit destekler) */
   ::-webkit-scrollbar {
     width: 10px;
   }
@@ -26,10 +40,6 @@
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #bfaa90;
-  }
-  body {
-    overflow-x: hidden;
-    touch-action: manipulation; /* Dokunma hareketlerini optimize et */
+    background: #a38d72;
   }
 }

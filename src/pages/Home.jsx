@@ -5,6 +5,7 @@ import dismekan from "../images/dismekan.webp";
 import Rooms from "../components/Rooms";
 import Services from "../components/Services";
 import Gallery from "../components/Gallery";
+import Reservation from "../components/Reservation";
 const Home = () => {
   return (
     <div className="flex flex-col min-h-screen">
@@ -147,7 +148,9 @@ const Home = () => {
               </h1>
               <div className="h-[3px] w-[100px] bg-primary rounded-xl"></div>
             </div>
-            <div></div>
+            <div>
+              <Reservation />
+            </div>
           </article>
         </section>
       </main>
